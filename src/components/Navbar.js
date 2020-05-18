@@ -1,11 +1,14 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom';
 
 export default class Navbar extends Component {
     render() {
         return (
             <nav className="nav">
                 <div className="left-div">
-                    <img src="" alt="logo" />
+                    <Link to="/">
+                        <img src="" alt="logo" />
+                    </Link>
                 </div>
                 <div className="search-container">
                     <img className="search-icon" src="https://image.flaticon.com/icons/svg/483/483356.svg" alt="searchIcon" />
@@ -26,9 +29,11 @@ export default class Navbar extends Component {
                     </div>
                     <div className="nav-links">
                         <ul>
-                            <li>Log in</li>
-                            <li>Log out</li>
-                            <li>Register</li>
+                            <li>
+                                <Link to="/login">Log in</Link>
+                            </li>
+                            <li><Link to="/logout">Log out</Link></li>
+                            <li><Link to="/signup">signup</Link></li>
                         </ul>
                     </div>
                 </div>
