@@ -4,16 +4,8 @@ import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 import { fetchPosts } from '../actions/posts';
-import { Home, Navbar, Page404 } from './';
+import { Home, Navbar, Page404, Login, Signup } from './';
 
-
-const Login = () => (
-  <div>Login</div>
-)
-
-const Signup = () => (
-  <div>Signup</div>
-)
 
 export class App extends Component {
 
